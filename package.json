@@ -1,6 +1,6 @@
 {
   "name": "v-mask-ru",
-  "version": "1.1.0",
+  "version": "2.2.0",
   "description": "Tiny input mask library for Vue.js based on text-mask-core (~4kb) exposed as directive. No dependencies (with support russian language)",
   "main": "dist/v-mask-ru.js",
   "module": "dist/v-mask-ru.esm.js",
