@@ -2,7 +2,7 @@ import { defaultMaskReplacers, NEXT_CHAR_OPTIONAL } from './constants';
 import { castToRegexp, makeRegexpOptional } from './utils/regexp';
 
 /**
- * Converts mask from `v-mask` format to `text-mask-core` format
+ * Converts mask from `v-mask-ru` format to `text-mask-core` format
  * @param {String} stringMask
  * @return {RegExp[]}
  */

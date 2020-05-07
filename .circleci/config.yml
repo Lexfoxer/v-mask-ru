@@ -39,8 +39,8 @@ jobs:
       - run: npm run build
 
       - store_artifacts:
-          path: ./dist/v-mask.min.js
-          destination: v-mask.min.js
+          path: ./dist/v-mask-ru.min.js
+          destination: v-mask-ru.min.js
 
       - run:
           name: Run code-style check

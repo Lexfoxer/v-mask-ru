@@ -13,7 +13,7 @@
     id="time-and-date-ex"
     type="text"
     placeholder="27/10/2016 23:15"
-    v-mask="'##/##/#### ##:##'"
+    v-mask-ru="'##/##/#### ##:##'"
     v-model="models.timeAndDate"
   />
   <hr>
@@ -21,7 +21,7 @@
     id="time-ex"
     type="text"
     placeholder="11:23:15"
-    v-mask="'##:##:##'"
+    v-mask-ru="'##:##:##'"
     v-model="models.timeWithSeconds"
   />
   <hr>
@@ -29,7 +29,7 @@
     id="hours-and-minutes-ex"
     type="text"
     placeholder="12h15m"
-    v-mask="'##h##m'"
+    v-mask-ru="'##h##m'"
     v-model="models.hoursAndMinutes"
   />
   <hr>
@@ -37,7 +37,7 @@
     id="credit-cart-ex"
     type="text"
     placeholder="4444 4444 4444 4444"
-    v-mask="'#### #### #### ####'"
+    v-mask-ru="'#### #### #### ####'"
     v-model="models.cardNumber"
   />
   <hr>
@@ -45,7 +45,7 @@
     id="phone-number-ex"
     type="text"
     placeholder="(999) 999-9999"
-    v-mask="'(###) ###-####'"
+    v-mask-ru="'(###) ###-####'"
     v-model="models.phoneNumber"
   />
   <hr>
@@ -53,7 +53,7 @@
     id="us-phone-number-ex"
     type="text"
     placeholder="+1(999)-999-9999"
-    v-mask="'+1(###)-###-####'"
+    v-mask-ru="'+1(###)-###-####'"
     v-model="models.usPhoneNumber"
   />
   <hr>
@@ -61,7 +61,7 @@
     id="cpf-ex"
     type="text"
     placeholder="123.123.123-12"
-    v-mask="'###.###.###-##'"
+    v-mask-ru="'###.###.###-##'"
     v-model="models.cpf"
   />
   <hr>
@@ -69,7 +69,7 @@
     id="cpnj-ex"
     type="text"
     placeholder="53.288.196/0001-28"
-    v-mask="'##.###.###/####-##'"
+    v-mask-ru="'##.###.###/####-##'"
     v-model="models.cpnj"
   />
   <hr>
@@ -77,14 +77,22 @@
     id="social-security-number-ex"
     type="text"
     placeholder="365-03-8704"
-    v-mask="'###-##-####'"
+    v-mask-ru="'###-##-####'"
     v-model="models.socialSecurityNumber"
+  />
+  <hr>
+  <input
+    id="russian-car-registration-number"
+    type="text"
+    placeholder="А123АА123"
+    v-mask-ru="'C###CC##?#'"
+    v-model="models.russianCarRegistrationNumber"
   />
 </div>
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.min.js"></script>
-<script src="../../../dist/v-mask.min.js"></script>
+<script src="../../../dist/v-mask-ru-ru.min.js"></script>
 <script>
-  Vue.use(VueMask.VueMaskPlugin);
+  Vue.use(VueMaskRu.VueMaskPlugin);
 
   new Vue({
     el: '#app',
@@ -99,7 +107,8 @@
           usPhoneNumber: '',
           cpf: '',
           cpnj: '',
-          socialSecurityNumber: ''
+          socialSecurityNumber: '',
+          russianCarRegistrationNumber: '',
         }
       }
     }

@@ -66,3 +66,10 @@ test('Social Security number input', async (t) => {
     .typeText(el, '365038704')
     .expect(el.value).eql('365-03-8704');
 });
+
+test('Russian car registration number', async (t) => {
+  const el = Selector('input#russian-car-registration-number');
+  await t
+    .typeText(el, 'А123АА123')
+    .expect(el.value).eql('А123АА123');
+});

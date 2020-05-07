@@ -1,7 +1,7 @@
 (function (global, factory) {
   typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :
   typeof define === 'function' && define.amd ? define(['exports'], factory) :
-  (global = global || self, factory(global.VueMask = {}));
+  (global = global || self, factory(global.VueMaskRu = {}));
 }(this, (function (exports) { 'use strict';
 
   function _typeof(obj) {
@@ -266,7 +266,9 @@
   var defaultMaskReplacers = {
     '#': /\d/,
     A: /[a-z]/i,
-    N: /[a-z0-9]/i,
+    B: /[а-яА-Я]/i,
+    C: /[АВЕКМНОРСТУХ]/i,
+    N: /[a-zA-Zа-яА-Я0-9]/i,
     '?': NEXT_CHAR_OPTIONAL,
     X: /./
   };
@@ -343,7 +345,7 @@
     }
 
     function partiallyUpdate(el, newOptions) {
-      elementOptions.set(el, _objectSpread2({}, get(el), {}, newOptions));
+      elementOptions.set(el, _objectSpread2(_objectSpread2({}, get(el)), newOptions));
     }
 
     function remove(el) {
@@ -439,13 +441,13 @@
   }
 
   var plugin = (function (Vue) {
-    Vue.directive('mask', directive);
-    Vue.filter('VMask', filter);
+    Vue.directive('mask-ru', directive);
+    Vue.filter('VMaskRu', filter);
   });
 
-  exports.VueMaskDirective = directive;
-  exports.VueMaskFilter = filter;
-  exports.VueMaskPlugin = plugin;
+  exports.VueMaskRuDirective = directive;
+  exports.VueMaskRuFilter = filter;
+  exports.VueMaskRuPlugin = plugin;
   exports.default = plugin;
 
   Object.defineProperty(exports, '__esModule', { value: true });

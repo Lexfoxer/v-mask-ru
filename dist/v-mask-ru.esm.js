@@ -260,7 +260,9 @@ var NEXT_CHAR_OPTIONAL = {
 var defaultMaskReplacers = {
   '#': /\d/,
   A: /[a-z]/i,
-  N: /[a-z0-9]/i,
+  B: /[а-яА-Я]/i,
+  C: /[АВЕКМНОРСТУХ]/i,
+  N: /[a-zA-Zа-яА-Я0-9]/i,
   '?': NEXT_CHAR_OPTIONAL,
   X: /./
 };
@@ -337,7 +339,7 @@ function createOptions() {
   }
 
   function partiallyUpdate(el, newOptions) {
-    elementOptions.set(el, _objectSpread2({}, get(el), {}, newOptions));
+    elementOptions.set(el, _objectSpread2(_objectSpread2({}, get(el)), newOptions));
   }
 
   function remove(el) {
@@ -433,9 +435,9 @@ function filter (value, stringMask) {
 }
 
 var plugin = (function (Vue) {
-  Vue.directive('mask', directive);
-  Vue.filter('VMask', filter);
+  Vue.directive('mask-ru', directive);
+  Vue.filter('VMaskRu', filter);
 });
 
 export default plugin;
-export { directive as VueMaskDirective, filter as VueMaskFilter, plugin as VueMaskPlugin };
+export { directive as VueMaskRuDirective, filter as VueMaskRuFilter, plugin as VueMaskRuPlugin };

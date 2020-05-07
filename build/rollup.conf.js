@@ -11,13 +11,13 @@ export default {
   output: [
     {
       format: 'umd',
-      name: 'VueMask',
+      name: 'VueMaskRu',
       exports: 'named',
-      file: 'dist/v-mask.js',
+      file: 'dist/v-mask-ru.js',
     },
     {
       format: 'esm',
-      file: 'dist/v-mask.esm.js',
+      file: 'dist/v-mask-ru.esm.js',
     },
   ],
-}
+};

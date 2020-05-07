@@ -6,6 +6,6 @@ import filter from './filter';
  * @param {Vue} Vue
  */
 export default (Vue) => {
-  Vue.directive('mask', directive);
-  Vue.filter('VMask', filter);
+  Vue.directive('mask-ru', directive);
+  Vue.filter('VMaskRu', filter);
 };

@@ -4,7 +4,7 @@ import plugin from './plugin';
 
 export {
   plugin as default,
-  plugin as VueMaskPlugin,
-  filter as VueMaskFilter,
-  directive as VueMaskDirective,
+  plugin as VueMaskRuPlugin,
+  filter as VueMaskRuFilter,
+  directive as VueMaskRuDirective,
 };
