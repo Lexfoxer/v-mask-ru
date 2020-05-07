@@ -1,9 +1,9 @@
 {
-  "name": "v-mask",
-  "version": "2.1.0",
-  "description": "Tiny input mask library for Vue.js based on text-mask-core (~4kb) exposed as directive. No dependencies",
-  "main": "dist/v-mask.js",
-  "module": "dist/v-mask.esm.js",
+  "name": "v-mask-ru",
+  "version": "1.1.0",
+  "description": "Tiny input mask library for Vue.js based on text-mask-core (~4kb) exposed as directive. No dependencies (with support russian language)",
+  "main": "dist/v-mask-ru.js",
+  "module": "dist/v-mask-ru.esm.js",
   "scripts": {
     "test": "jest",
     "test:coverage": "jest --coverage",
@@ -18,19 +18,23 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/probil/v-mask.git"
+    "url": "git+https://github.com/lexfoxer/v-mask-ru.git"
   },
   "keywords": [
     "vue.js",
     "vue",
-    "vue-mask"
+    "vue-mask",
+    "v-mask",
+    "v-mask-ru",
+    "v-mask-rus",
+    "v-mask-russian"
   ],
-  "author": "Max Lyashuk <m_lyashuk@ukr.net>",
+  "author": "Lexfoxer <lexfoxer@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/probil/v-mask/issues"
+    "url": "https://github.com/lexfoxer/v-mask-ru/issues"
   },
-  "homepage": "https://github.com/probil/v-mask#readme",
+  "homepage": "https://github.com/lexfoxer/v-mask-ru#readme",
   "devDependencies": {
     "@babel/core": "7.9.6",
     "@babel/preset-env": "7.9.6",
